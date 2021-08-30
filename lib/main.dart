@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
                   border: Border.all(color: Colors.white, width: 2)
                 ),
                 child: Center(
-                  child: Text("A",style: TextStyle(
+                  child: Text("A",style: TextStyle(  
                     fontSize: 80,
                     color: Colors.white
                   ),),
@@ -40,7 +40,7 @@ class MyApp extends StatelessWidget {
               ),
             ),
             Container(
-              margin: EdgeInsets.all(30),
+              margin: EdgeInsets.only(left: 30,right: 30,top: 10,bottom: 20),
               alignment: Alignment.center,
               decoration: BoxDecoration(
                 color: Colors.lightBlueAccent,
@@ -52,7 +52,7 @@ class MyApp extends StatelessWidget {
                   decoration: InputDecoration(
                     border: InputBorder.none,
                     hintText: "Arifur Rhaman",
-                    icon: Icon(Icons.person)
+                    icon: Icon(Icons.person,color: Colors.white,)
                   ),
                 ),
               ),
@@ -70,9 +70,22 @@ class MyApp extends StatelessWidget {
                   decoration: InputDecoration(
                       border: InputBorder.none,
                       hintText: "Password",
-                      icon: Icon(Icons.person)
+                      icon: Icon(Icons.lock,color: Colors.white,)
                   ),
                 ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left: 20,right: 20,top: 20),
+              child: TextButton(
+                style: TextButton.styleFrom(
+                  primary: Colors.red,
+                  backgroundColor: Colors.lightBlueAccent,
+                  minimumSize: Size(200.00,50.00),
+                  textStyle: const TextStyle(fontSize: 20),
+                ),
+                onPressed: () {},
+                child: const Text('Gradient'),
               ),
             ),
           ],
